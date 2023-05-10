@@ -4,3 +4,5 @@ Petit projet en cpp de snake avec objectif du solo du multi et un leader board :
 - multijoueur : en cours
 - leader : pas commencer
 - sauvegarde : ok
+
+compilation : make all
