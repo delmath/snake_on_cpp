@@ -19,8 +19,6 @@ void draw_menu(int selectedOption)
     gotoxy(width / 2 - 3, 6);
     cout << "PLAY";
     gotoxy(width / 2 - 3, 8);
-    cout << "MULTIPLAYER";
-    gotoxy(width / 2 - 3, 10);
     cout << "QUIT";
     gotoxy(width / 2 - 4, 6);
     if (selectedOption == 0)
@@ -50,11 +48,11 @@ bool process_menu()
         if (_kbhit())
         {
             char key = _getch();
-            if (key == 'o' || key == 'l')
+            if (key == 'z' || key == 's')
             {
                 gotoxy(width / 2 - 4, 6 + 2 * selectedOption);
                 cout << " ";
-                selectedOption = (selectedOption + 1) % 3;
+                selectedOption = (selectedOption + 1) % 2;
                 gotoxy(width / 2 - 4, 6 + 2 * selectedOption);
                 cout << ">";
             }
@@ -63,9 +61,6 @@ bool process_menu()
                 if (selectedOption == 0)
                 { // Single player
                     return false;
-                } else if (selectedOption == 1)
-                { // Multiplayer
-                    // Add to host or join a game
                 } else
                 { // Quit
                     return true;

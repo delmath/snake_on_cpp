@@ -7,9 +7,6 @@ SOURCES = 	$(SRCDIR)/main.cpp	\
 			$(SRCDIR)/menu.cpp	\
 			$(SRCDIR)/game.cpp	\
 			$(SRCDIR)/save.cpp	\
-#			$(SRCDIR)/multi-game.###cpp	\
-#			$(SRCDIR)/snake.cpp	\
-#			$(SRCDIR)/fruit.cpp	\
 
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
 

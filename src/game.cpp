@@ -78,19 +78,19 @@ void Input()
     {
         switch (_getch())
         {
-            case 'k':
+            case 'q':
                 dir = LEFT;
                 break;
 
-            case 'm':
+            case 'd':
                 dir = RIGHT;
                 break;
 
-            case 'o':
+            case 'z':
                 dir = UP;
                 break;
 
-            case 'l':
+            case 's':
                 dir = DOWN ;
                 break;
 
